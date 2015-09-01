@@ -22,6 +22,22 @@ may be present as use cases, but will not be a focal point for
 grading.
 
 
+## Required software
+
+Students are asked to install an Ubuntu 14.04 preloaded with the
+[Data Science Toolbox](datasciencetoolbox.org) along with 
+[Jupyter](http://jupyter.org/), [MySQL](https://www.mysql.com/), 
+[PostgreSQL](http://www.postgresql.org/), [R](https://www.r-project.org/),
+[Julia](http://julialang.org/), and [Spark](http://spark.apache.org/)
+preconfigured. Installation (via Virtualbox and Vagrant) instructions 
+[are available 
+here](https://github.com/dchud/warehousing-course/blob/master/README-vm-installation.txt).
+
+OS X or Linux users may be able to install necessary pieces via
+[Anaconda](https://store.continuum.io/cshop/anaconda/) and
+[Homebrew](http://brew.sh/) (OS X).
+
+
 ## License
 
 This work is in the public domain.  See LICENSE for details.
