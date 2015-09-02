@@ -63,10 +63,10 @@ http://www.barebones.com/products/textwrangler/) or Notepad++
 Look for the section in the middle of the file, among the other
 commented-out bits, that includes:
 
-   "# vb.gui = true"
+   # vb.gui = true
 
-   Right around there in the file, insert the following (and don't
-   comment it):
+Right around there in the file, insert the following (and don't
+comment it):
 
    config.vm.provider "virtualbox" do |v|
      v.gui = true
@@ -79,19 +79,19 @@ commented-out bits, that includes:
      v.customize ["modifyvm", :id, "--hwvirtex", "on"]
    end
 
-  Note (from the line about "--cpus") that this assigns two vCPUs
-  to the VM.  This will work for you if, like me, you have a dual-cpu,
-  dual-core machine that can dedicate two cores to a guest VM and
-  still have two cores for the host OS.  If you have less than this,
-  set it to 1.  The VM will not perform as well, but it should work,
-  at least.  Same goes for the line about "--memory"... if you don't
-  have 2GB RAM to spare, lower this number. YMMV.
+Note (from the line about "--cpus") that this assigns two vCPUs
+to the VM.  This will work for you if, like me, you have a dual-cpu,
+dual-core machine that can dedicate two cores to a guest VM and
+still have two cores for the host OS.  If you have less than this,
+set it to 1.  The VM will not perform as well, but it should work,
+at least.  Same goes for the line about "--memory"... if you don't
+have 2GB RAM to spare, lower this number. YMMV.
 
-  The graphics-related lines pass configuration details through to
-  allow the VM to load up with a GUI, rather than just a shell /
-  command-line.
+The graphics-related lines pass configuration details through to
+allow the VM to load up with a GUI, rather than just a shell /
+command-line.
 
-  Save the file and exit your editor.
+Save the file and exit your editor.
 
 8. Start up the image:
 
