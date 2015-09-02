@@ -26,14 +26,32 @@ VirtualBox is a virtual machine container / manager.
 
 Vagrant is a tool that makes installing preconfigured VMs easy.
 
-3. ~ $ mkdir dbplus
+3. On a Mac, open a terminal, and at the command prompt, type:
 
+  ~ $ mkdir dbplus
+
+On windows, open a cmd shell, and at the command prompt, type:
+
+  C:\> mkdir dbplus
+  
 This directory will hold the configuration file.
 
-4. ~ $ cd dbplus
+4. Next, on a mac:
 
-5. ~/dbplus $ vagrant init dchud/dbplus
+  ~ $ cd dbplus
+  
+Or on windows:
 
+  C:\> cd dbplus
+
+5. And then:
+
+  ~/dbplus $ vagrant init dchud/dbplus
+  
+Or:
+  
+  C:\dbplus> vagrant init dchud/dbplus
+  
 This should generate a Vagrantfile which we'll edit next.
 
 6. If you're not used to using a text editor, try installing and
@@ -75,9 +93,15 @@ commented-out bits, that includes:
 
   Save the file and exit your editor.
 
-8. ~/dbplus $ vagrant up
+8. Start up the image:
 
-This should download the box image.  It is big - at least 2.5Gb.
+   ~/dbplus $ vagrant up
+
+Or:
+ 
+   C:\dbplus> vagrant up
+
+This should download the box image.  It is big - at least 2.8Gb.
 After the download completes, the image should boot up and you
 should see a window open with the box coming online.
 
