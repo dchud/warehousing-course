@@ -51,12 +51,14 @@ commented-out bits, that includes:
    comment it):
 
    config.vm.provider "virtualbox" do |v|
-     v.gui = true v.customize ["modifyvm", :id, "--memory", "2048"]
-     v.customize ["modifyvm", :id, "--cpus", "2"] v.customize
-     ["modifyvm", :id, "--graphicscontroller", "vboxvga"] v.customize
-     ["modifyvm", :id, "--accelerate3d", "on"] v.customize ["modifyvm",
-     :id, "--ioapic", "on"] v.customize ["modifyvm", :id, "--vram",
-     "128"] v.customize ["modifyvm", :id, "--hwvirtex", "on"]
+     v.gui = true
+     v.customize ["modifyvm", :id, "--memory", "2048"]
+     v.customize ["modifyvm", :id, "--cpus", "2"]
+     v.customize ["modifyvm", :id, "--graphicscontroller", "vboxvga"]
+     v.customize ["modifyvm", :id, "--accelerate3d", "on"]
+     v.customize ["modifyvm", :id, "--ioapic", "on"]
+     v.customize ["modifyvm", :id, "--vram", "128"]
+     v.customize ["modifyvm", :id, "--hwvirtex", "on"]
    end
 
   Note (from the line about "--cpus") that this assigns two vCPUs
