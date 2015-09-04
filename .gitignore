@@ -58,3 +58,4 @@ target/
 
 # Vim
 *.swp
+.ipynb_checkpoints
