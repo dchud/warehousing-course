@@ -8,7 +8,7 @@ import fileinput
 
 def process(line):
     """For each line of input, ___."""
-    print line
+    print line.strip()
 
 
 for line in fileinput.input():
